@@ -4,7 +4,7 @@ DSSP is a system for splice site prediction using deep neural networks.
 
 INSTALL
 ===
-DSSP is implemented in [Python] (https://www.python.org) (3.6.0). We recommend you to install [Anaconda] (https://www.continuum.io) since it contains a lot of dependencies for data processing and scientific computing.
+DSSP is implemented in [Python] (https://www.python.org) (3.5.2). We recommend you to install [Anaconda] (https://www.continuum.io) since it contains a lot of dependencies for data processing and scientific computing.
 
 Required
 ---
@@ -15,6 +15,7 @@ Keras must be installed to run our program.
 USAGE
 ===
 Download all into your favorite directory. 
+It returns the probability that the input sequence is a splice site.
 
 LICENSE
 ===
