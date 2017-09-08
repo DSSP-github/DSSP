@@ -13,7 +13,6 @@ model.load_weights(os.path.join(base_dir, 'DS_model.hdf5'))
 base_key = {'A':0, 'C':1, 'G':2, 'T':3, 'N': 4}
 
 input_seq = sys.argv[1]
-print (input_seq)
 input_vec = np.zeros((len(input_seq), 5))
 for i in range(len(input_seq)):
     input_vec[i][base_key[input_seq[i]]] = 1
