@@ -16,7 +16,7 @@ USAGE
 ===
 Download all into your favorite directory.   
 Select a program file in accordance with the type of splice sites (donor site: 'DS_DSSP.py', acceptor site: 'AS_DSSP.py').  
-An input argument must be a text of 140 bases of which 69-70th characters are 'GT' for donor site prediction and 71-72th characters are 'AG' for acceptor site prediction.  
+An input argument must be a text of 140 bases of which 71-72th characters are 'GT' for donor site prediction and 69-70th characters are 'AG' for acceptor site prediction.  
 It returns the probability that the input sequence is a splice site.
 
 LICENSE
