@@ -14,10 +14,10 @@ Keras must be installed to run our program.
 
 USAGE
 ===
-Download all into your favorite directory.   
-Select a program file in accordance with the type of splice sites (donor site: 'DS_DSSP.py', acceptor site: 'AS_DSSP.py').  
-An input argument must be a text of 140 bases of which 71-72th characters are 'GT' for donor site prediction and 69-70th characters are 'AG' for acceptor site prediction.  
-It returns the probability that the input sequence is a splice site.
+Download all files into your favorite directory.   
+Select a program file according to the type of splice site (donor site: “DS_DSSP.py,” acceptor site: “AS_DSSP.py”).  
+An input argument must be a text of 140 bases, of which characters 71 and 72 are “GT” for donor site prediction and characters 69 and 70 are “AG” for acceptor site prediction.  
+The probability that the input sequence is a splice site will be generated.
 
 LICENSE
 ===
