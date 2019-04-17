@@ -21,7 +21,7 @@ USAGE
   
 Sample
 ===
-Donor site.
+Donor site
 ---
 * An input for donor site should be a 140-mer strings with the GT at positions 71 and 72.  
 ```
@@ -34,7 +34,7 @@ TCCTGGAGAGGACGAGAATTCCACCTGGGGTGCTGGGGGTCACTGGG
 Donor site probability: 0.9999337196350098
 ```
 
-Acceptor site.
+Acceptor site
 ---
 * An input for acceptor site should be a 140-mer strings with the AG at positions 69 and 70.  
 ```
