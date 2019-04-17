@@ -9,14 +9,14 @@ DSSP is implemented in [Python](https://www.python.org) (3.5.2). We recommend yo
 Required
 ---
 Keras must be installed to run our program. 
-* [Keras](https://keras.io/). It is a library for deep neural networks. We recommend Keras 2.0.5 since different versions may cause unexpected errors.
+* [Keras](https://keras.io/). We recommend Keras 2.0.5 since different versions may cause unexpected errors.
 * Several modules may be required for using Keras. Please read the official documentations.
   
 USAGE
 ===
 * Download all files into your favorite directory. 
-* Select a program file according to the type of splice site (donor site: “DS_DSSP.py,” acceptor site: “AS_DSSP.py”).  
-* The required input is a 140-mer base sequence with the consensus sequence (i.e., ‘‘GT’’ and ‘‘AG’’ for the donor and acceptor sites, respectively) in the middle. 
+* Select a program file according to the type of splice site (donor site: "DS_DSSP.py", acceptor site: "AS_DSSP.py").  
+* The required input is a 140-mer base sequence with the consensus sequence (i.e., "GT" and "AG" for the donor and acceptor sites, respectively) in the middle. 
 * It returns the probability that the input sequence is a splice site.
   
 Sample
