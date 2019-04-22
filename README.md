@@ -1,6 +1,6 @@
 README for DSSP
 ===
-DSSP is a system for splice site prediction using deep neural networks, as described in [Naito T. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
+DSSP is a system for splice site prediction using deep neural networks, as described in [Naito T. Human Splice-Site Prediction with Deep Neural Networks. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
   
 INSTALL
 ===
@@ -23,7 +23,7 @@ Sample
 ===
 Donor site
 ---
-* An input for donor site should be a 140-mer strings with the GT at positions 71 and 72.  
+* An input for donor site should be a 140-mer string with the GT at positions 71 and 72.  
 ```
 $ python DS_DSSP.py 
 CTCCTCTTTGCCTTACTCCTAGCCATGGAGCTCCCATTGGTGGCAGCCAGTGCCACCATGCGCGCTCAGTGTAAGTATCATTCCCTCTCACTG
@@ -36,7 +36,7 @@ Donor site probability: 0.9999337196350098
 
 Acceptor site
 ---
-* An input for acceptor site should be a 140-mer strings with the AG at positions 69 and 70.  
+* An input for acceptor site should be a 140-mer string with the AG at positions 69 and 70.  
 ```
 $ python AS_DSSP.py 
 GGCCAGGGGCATAGAGCTGGCCAAGGAGCCATGGCTCACTAACGTGTTGTATGGGGCTCCTTCCCTTCAGGTCCAGGCTCCTGCGTGAAGTGA
