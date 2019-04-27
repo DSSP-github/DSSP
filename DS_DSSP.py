@@ -46,7 +46,7 @@ def DS_DSSP(input_seq):
 
 def main(argv=sys.argv):
 
-    parser = argparse.ArgumentParser(description='Receive a single 140-mer base sequence string or fasta file.')
+    parser = argparse.ArgumentParser(description='Receive a single 140-mer base sequence string or FASTA file.')
 
     if len(argv) == 1:
         parser.parse_args(['-h'])
