@@ -1,53 +1,58 @@
-README for DSSP
+README
 ===
-DSSP is a system for splice site prediction using deep neural networks, as described in [Naito T. Human Splice-Site Prediction with Deep Neural Networks. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
+DSSP is a system for splice site prediction using deep neural networks, as described in [Naito T. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
   
-INSTALL
-===
-DSSP is implemented in [Python](https://www.python.org) (3.5.2). We recommend you to install [Anaconda](https://www.continuum.io) since it contains a lot of dependencies for data processing and scientific computing.
-
 Required
----
-Keras must be installed to run our program. 
-* [Keras](https://keras.io/). We recommend Keras 2.0.5 since different versions may cause unexpected errors.
-* Several modules may be required for using Keras. Please read the official documentations.
+===
+* DSSP is implemented in [Python](https://www.python.org) (3.5.2).  
+* [Keras](https://keras.io/) must be installed to run our program. We recommend Keras 2.0.5 since different versions may cause unexpected errors. Several modules may be required for using Keras. Please read the official documentations.
   
-USAGE
+Usage
 ===
 * Download all files into your favorite directory. 
-* Select a program file according to the type of splice site (donor site: "DS_DSSP.py", acceptor site: "AS_DSSP.py").  
-* The required input is a 140-mer base sequence with the consensus sequence (i.e., "GT" and "AG" for the donor and acceptor sites, respectively) in the middle. 
-* It returns the probability that the input sequence is a splice site.
+* Select a program file according to the type of splice site (donor site: “DS_DSSP.py,” acceptor site: “AS_DSSP.py”).  
+* The required input is a 140-mer base sequence with the consensus sequence (i.e., ‘‘GT’’ and ‘‘AG’’ for the donor and acceptor sites, respectively) in the middle. 
+* DSSP can take a base sequence string or FASTA file (see Examples).
+* It returns the probability that the input sequence is a splice site.  
+Options:  
+  * -I, INPUT : 140-mer base sequece string, or FASTA file.
+  * -O, OUTPUT: path to the output file.
   
-Sample
+Examples
 ===
 Donor site
 ---
-* An input for donor site should be a 140-mer string with the GT at positions 71 and 72.  
+An input for donor site should be a 140-mer string with the GT at positions 71 and 72.  
 ```
-$ python DS_DSSP.py 
-CTCCTCTTTGCCTTACTCCTAGCCATGGAGCTCCCATTGGTGGCAGCCAGTGCCACCATGCGCGCTCAGTGTAAGTATCATTCCCTCTCACTG
+$ python DS_DSSP.py -I CTCCTCTTTGCCTTACTCCTAGCCATGGAGCTCCCATTGGTGGCAGCCAGTGCCACCATGCGCGCTCAGTGTAAGTATCATTCCCTCTCACTG
 TCCTGGAGAGGACGAGAATTCCACCTGGGGTGCTGGGGGTCACTGGG
 ```
-* Result
+Result
 ```bash
 Donor site probability: 0.9999337196350098
 ```
 
+Alternatively, DSSP can receive a FASTA file.  
+You can specify an output filename optionally. If you do not specify an output filename, the results are saved as "result_{input filename}.txt" in the same directory as the input file.
+```
+$ python DS_DSSP.py -I input.fasta -O output.txt 
+```
+
+
 Acceptor site
 ---
-* An input for acceptor site should be a 140-mer string with the AG at positions 69 and 70.  
+An input for acceptor site should be a 140-mer string with the AG at positions 69 and 70.  
 ```
-$ python AS_DSSP.py 
-GGCCAGGGGCATAGAGCTGGCCAAGGAGCCATGGCTCACTAACGTGTTGTATGGGGCTCCTTCCCTTCAGGTCCAGGCTCCTGCGTGAAGTGA
+$ python AS_DSSP.py -I GGCCAGGGGCATAGAGCTGGCCAAGGAGCCATGGCTCACTAACGTGTTGTATGGGGCTCCTTCCCTTCAGGTCCAGGCTCCTGCGTGAAGTGA
 TGCTCCTCTTTGCCTTACTCCTAGCCATGGAGCTCCCATTGGTGGCA
 ```
-* Result
+Result
 ```bash
 Acceptor site probability:: 0.9931520223617554
 ```
+You can input a FASTA file, and specify an output filename in the same way as the DS_DSSP example.
   
-LICENSE
+License
 ===
 * The souce code can be modified without notice.
 * DSSP is freely available for non-commercial use. If you are planning on using DSSP in a commercial application, please contact us.  
