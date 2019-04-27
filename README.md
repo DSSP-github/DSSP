@@ -34,7 +34,7 @@ Donor site probability: 0.9999337196350098
 
 Alternatively, DSSP can receive a FASTA file.  
 You can specify an output filename optionally. If you do not specify an output filename, the results are saved as "result_{input filename}.txt" in the same directory as the input file.
-```
+```bash
 $ python DS_DSSP.py -I input.fasta -O output.txt 
 ```
 
