@@ -1,6 +1,6 @@
 README
 ===
-DSSP is a system for splice site prediction using deep neural networks, as described in [Naito T. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
+DSSP is a system for splice site prediction using deep neural networks, as described in [Human Splice-Site Prediction with Deep Neural Networks. Naito T. *J Comput Biol*. 2018;25(8):954–61](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0041).  
   
 Required
 ===
