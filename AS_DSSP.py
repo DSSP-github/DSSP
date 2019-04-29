@@ -58,8 +58,6 @@ def main(argv=sys.argv):
 
     if os.path.isfile(args.input):
         input_file = args.input
-        print(input_file)
-        print(os.path.split(input_file)[1])
         if args.output:
             fn_o = args.output
         else:
