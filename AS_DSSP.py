@@ -61,7 +61,7 @@ def main(argv=sys.argv):
         if args.output:
             fn_o = args.output
         else:
-            fn_o = 'result_' + os.path.splitext(input_file)[0] + '.txt'
+            fn_o = os.path.splitext(input_file)[0] + '_result.txt'
 
         f_i = open(input_file, mode='r')
         f_o = open(fn_o, mode='w')
